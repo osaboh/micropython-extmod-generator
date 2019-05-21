@@ -287,7 +287,6 @@ def generate(module, force=False):
 
     src.append('const mp_obj_module_t mp_module_{module} = {{')
     src.append('    .base = {{ &mp_type_module }},')
-    src.append('    .name = MP_QSTR_{module},')
     src.append('    .globals = (mp_obj_dict_t*)&mp_module_{module}_globals,')
     src.append('}};')
     src.append('')

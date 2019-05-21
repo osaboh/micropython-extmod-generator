@@ -3,7 +3,7 @@
  *
  * The MIT License (MIT)
  *
- * Copyright (c) 2016 Module Author
+ * Copyright (c) 2019 Module Author
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -23,6 +23,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
+
 
 #if MICROPY_PY_EXAMPLE
 
@@ -206,7 +207,6 @@ STATIC MP_DEFINE_CONST_DICT(mp_module_example_globals, mp_module_example_globals
 
 const mp_obj_module_t mp_module_example = {
     .base = { &mp_type_module },
-    .name = MP_QSTR_example,
     .globals = (mp_obj_dict_t*)&mp_module_example_globals,
 };
 
